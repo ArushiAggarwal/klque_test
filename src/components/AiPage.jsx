@@ -36,7 +36,7 @@ const AiPage = () => {
     setIsLoading(true);
     console.log(prompt)
     try {
-      const response = await fetch("http://localhost:8081/api/openai", {
+      const response = await fetch("http://localhost:8081/api/chats/openai", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

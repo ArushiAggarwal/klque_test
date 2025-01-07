@@ -18,7 +18,7 @@ const router = express.Router();
 //       response,
 //     });
 
-router.post("/", async (req, res) => {
+router.post("/openai", async (req, res) => {
   const { prompt } = req.body;
 
   if (!prompt) {
